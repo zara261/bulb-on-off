@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulb On/Off</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #74ebd5, #9face6);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        img {
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+        }
+
+        button {
+            background: #3e5d93;
+            color: rgb(49, 10, 126);
+            border: none;
+            padding: 12px 20px;
+            margin: 10px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #254394;
+            transform: scale(1.05);
+        }
+
+        button#2 {
+            background: #f44336;
+        }
+
+        button#2:hover {
+            background: #d32f2f;
+        }
+
+        p {
+            font-size: 18px;
+            color: #222;
+            margin-top: 10px;
+        }
+
+        #demo {
+            font-weight: bold;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <h1>💡 Bulb On/Off Project</h1>
+
+    <button id="1" onclick="document.getElementById('on').src='assets/blbon.png'">Turn On</button>
+    <img id="on" src="assets/bulboff.jfif" style="width:100px">
+    <button id="2" onclick="document.getElementById('on').src='assets/bulboff.png'">Turn Off</button>
+
+    <p>This is my web development practice set</p>
+    <p id="demo"></p>
+
+   <script>
+    // Example of changing text dynamically
+    document.getElementById("demo").innerText = "No, this is not a practice 😉";
+   </script>
+</body>
+</html>
